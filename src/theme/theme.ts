@@ -1,16 +1,16 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components'
 
-const BLACK_50 = "rgba(1, 0, 9, 0.5)";
+const BLACK_50 = 'rgba(1, 0, 9, 0.5)'
 
 export const theme: DefaultTheme = {
   colors: {
-    accent: "#FEE048",
-    black100: "#010009",
-    black80: "rgba(1, 0, 9, 0.8)",
+    accent: '#FEE048',
+    black100: '#010009',
+    black80: 'rgba(1, 0, 9, 0.8)',
     black50: BLACK_50,
-    white100: "#FFFFFF",
-    white60: "rgba(255, 255, 255, 0.6)",
-    white20: "rgba(255, 255, 255, 0.2)",
+    white100: '#FFFFFF',
+    white60: 'rgba(255, 255, 255, 0.6)',
+    white20: 'rgba(255, 255, 255, 0.2)',
   },
   spacing: {
     xs: 4,
@@ -27,9 +27,9 @@ export const theme: DefaultTheme = {
     md: `0px 4px 4px 0px ${BLACK_50}`,
   },
   transition: {
-    default: "0.167s all ease-out",
+    default: '0.167s all ease-out',
   },
   breakpoints: {
     mobile: 425,
   },
-};
+}

@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const CustomScrollbar = createGlobalStyle`
     ::-webkit-scrollbar {
@@ -16,4 +16,4 @@ export const CustomScrollbar = createGlobalStyle`
     ::-webkit-scrollbar-thumb:hover {
     background: ${({ theme }) => theme.colors.accent};
     }
-`;
+`

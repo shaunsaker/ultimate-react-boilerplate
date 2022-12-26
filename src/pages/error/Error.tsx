@@ -1,10 +1,10 @@
-import { useRouteError } from "react-router-dom";
-import styled from "styled-components";
-import { Page } from "../../components/page/Page";
-import { Typography } from "../../components/typography/Typography";
+import { useRouteError } from 'react-router-dom'
+import styled from 'styled-components'
+import { Page } from '../../components/page/Page'
+import { Typography } from '../../components/typography/Typography'
 
 export const Error = () => {
-  const error = useRouteError() as { statusText?: string; message: string };
+  const error = useRouteError() as { statusText?: string; message: string }
 
   return (
     <Page>
@@ -14,13 +14,13 @@ export const Error = () => {
 
       <Typography kind="paragraph">{error.statusText || error.message}</Typography>
     </Page>
-  );
-};
+  )
+}
 
 const StyledTitleText = styled(Typography)`
   margin-bottom: ${({ theme }) => theme.spacing.lg}px;
-`;
+`
 
 const StyledHeadingText = styled(Typography)`
   margin-bottom: ${({ theme }) => theme.spacing.lg}px;
-`;
+`

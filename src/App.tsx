@@ -1,7 +1,7 @@
-import { CustomScrollbar } from "./components/customScrollbar/CustomScrollbar";
-import { GlobalStyles } from "./components/globalStyles/GlobalStyles";
-import { ThemeProvider } from "./components/themeProvider/ThemeProvider";
-import { Router } from "./Router";
+import { CustomScrollbar } from './components/customScrollbar/CustomScrollbar'
+import { GlobalStyles } from './components/globalStyles/GlobalStyles'
+import { ThemeProvider } from './components/themeProvider/ThemeProvider'
+import { Router } from './Router'
 
 export const App = () => {
   return (
@@ -12,5 +12,5 @@ export const App = () => {
 
       <Router />
     </ThemeProvider>
-  );
-};
+  )
+}

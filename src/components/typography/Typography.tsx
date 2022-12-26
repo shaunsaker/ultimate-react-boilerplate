@@ -1,9 +1,9 @@
-import styled, { css } from "styled-components";
-import "@fontsource/knewave";
-import "@fontsource/inter/700.css";
-import "@fontsource/inter/400.css";
+import styled, { css } from 'styled-components'
+import '@fontsource/knewave'
+import '@fontsource/inter/700.css'
+import '@fontsource/inter/400.css'
 
-export type TypographyKind = "title" | "heading" | "paragraph" | "small";
+export type TypographyKind = 'title' | 'heading' | 'paragraph' | 'small'
 
 const kindToCssMap: Record<TypographyKind, ReturnType<typeof css>> = {
   title: css`
@@ -39,14 +39,14 @@ const kindToCssMap: Record<TypographyKind, ReturnType<typeof css>> = {
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
   `,
-};
+}
 
 export const Typography = styled.div<{
-  kind: TypographyKind;
+  kind: TypographyKind
 }>`
   ${({ kind }) => kindToCssMap[kind]};
 
   a {
     color: ${({ theme }) => theme.colors.accent};
   }
-`;
+`

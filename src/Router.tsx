@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Error } from "./pages/error/Error";
-import { Home } from "./pages/home/Home";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Error } from './pages/error/Error'
+import { Home } from './pages/home/Home'
 
 export enum Routes {
-  home = "/",
+  home = '/',
 }
 
 const router = createBrowserRouter([
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
     element: <Home />,
     errorElement: <Error />,
   },
-]);
+])
 
 export const Router = () => {
-  return <RouterProvider router={router} />;
-};
+  return <RouterProvider router={router} />
+}

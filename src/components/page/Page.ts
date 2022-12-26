@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Page = styled.div`
   width: 100%;
@@ -8,4 +8,4 @@ export const Page = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
+`
