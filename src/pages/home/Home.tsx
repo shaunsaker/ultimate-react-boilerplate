@@ -5,7 +5,9 @@ import { Typography } from '../../components/typography/Typography'
 export const Home = () => {
   return (
     <Page>
-      <Typography kind="title">Home Page</Typography>
+      <Typography kind="title" role="heading">
+        Ello Gov&apo;na!
+      </Typography>
     </Page>
   )
 }

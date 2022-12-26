@@ -1,17 +1,12 @@
 import React from 'react'
-import { CustomScrollbar } from './components/customScrollbar/CustomScrollbar'
-import { GlobalStyles } from './components/globalStyles/GlobalStyles'
-import { ThemeProvider } from './components/themeProvider/ThemeProvider'
+
+import { AppProvider } from './components/appProvider/AppProvider'
 import { Router } from './Router'
 
 export const App = () => {
   return (
-    <ThemeProvider>
-      <GlobalStyles />
-
-      <CustomScrollbar />
-
+    <AppProvider>
       <Router />
-    </ThemeProvider>
+    </AppProvider>
   )
 }
