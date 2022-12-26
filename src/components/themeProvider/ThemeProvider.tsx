@@ -1,3 +1,4 @@
+import React from 'react'
 import { ReactNode } from 'react'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import { theme } from '../../theme/theme'

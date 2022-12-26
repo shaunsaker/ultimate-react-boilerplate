@@ -1,3 +1,4 @@
+import React from 'react'
 import { useRouteError } from 'react-router-dom'
 import styled from 'styled-components'
 import { Page } from '../../components/page/Page'

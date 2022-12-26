@@ -1,3 +1,4 @@
+import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Error } from './pages/error/Error'
 import { Home } from './pages/home/Home'
