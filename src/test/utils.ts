@@ -1,6 +1,7 @@
-import { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import { ReactElement } from 'react'
+
 import { AppProvider } from '../components/appProvider/AppProvider'
 
 const customRender = (element: ReactElement, options?: Omit<RenderOptions, 'wrapper'>) =>

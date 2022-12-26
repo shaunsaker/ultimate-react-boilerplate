@@ -1,3 +1,5 @@
+const ERROR = 'error'
+
 module.exports = {
   env: {
     browser: true,
@@ -14,13 +16,15 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'jest'],
+  plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
   settings: {
     react: {
       version: 'detect',
     },
   },
   rules: {
-    '@typescript-eslint/no-unused-vars': ['error', { args: 'all', argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': [ERROR, { args: 'all', argsIgnorePattern: '^_' }],
+    'simple-import-sort/imports': ERROR,
+    'simple-import-sort/exports': ERROR,
   },
 }
