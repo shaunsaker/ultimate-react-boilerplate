@@ -1,4 +1,5 @@
 const ERROR = 'error'
+const OFF = 0
 
 module.exports = {
   env: {
@@ -26,5 +27,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [ERROR, { args: 'all', argsIgnorePattern: '^_' }],
     'simple-import-sort/imports': ERROR,
     'simple-import-sort/exports': ERROR,
+    'react/no-unescaped-entities': OFF,
   },
 }

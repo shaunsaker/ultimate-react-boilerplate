@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <Page>
       <Typography kind="title" role="heading">
-        Ello Gov&apo;na!
+        Ello Gov'na!
       </Typography>
     </Page>
   )
