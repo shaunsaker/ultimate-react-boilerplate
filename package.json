@@ -12,6 +12,7 @@
     "lint:ts": "tsc",
     "test": "vitest --run",
     "test:watch": "vitest",
+    "genicons": "npx @svgr/cli@5 --template tools/icons/svgr.template.js --typescript --memo --icon -d src/components/icons --svgo-config ./tools/icons/svgo.json --ignore-existing",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
