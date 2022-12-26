@@ -1,17 +1,26 @@
 import { useRouteError } from "react-router-dom";
+import styled from "styled-components";
+import { Page } from "../../components/page/Page";
+import { Typography } from "../../components/typography/Typography";
 
 export const Error = () => {
   const error = useRouteError() as { statusText?: string; message: string };
 
   return (
-    <div>
-      <h1>Oops!</h1>
+    <Page>
+      <StyledTitleText kind="title">Oops!</StyledTitleText>
 
-      <p>Sorry, an unexpected error has occurred.</p>
+      <StyledHeadingText kind="heading">Sorry, an unexpected error has occurred.</StyledHeadingText>
 
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
-    </div>
+      <Typography kind="paragraph">{error.statusText || error.message}</Typography>
+    </Page>
   );
 };
+
+const StyledTitleText = styled(Typography)`
+  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
+`;
+
+const StyledHeadingText = styled(Typography)`
+  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
+`;
