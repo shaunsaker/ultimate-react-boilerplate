@@ -1,8 +1,9 @@
 import React from 'react'
 import { useRouteError } from 'react-router-dom'
-import styled from 'styled-components'
 
+import { HeaderBar } from '../../components/headerBar/HeaderBar'
 import { Page } from '../../components/page/Page'
+import { Spacer } from '../../components/spacer/Spacer'
 import { Typography } from '../../components/typography/Typography'
 
 export const Error = () => {
@@ -10,19 +11,13 @@ export const Error = () => {
 
   return (
     <Page>
-      <StyledTitleText kind="title">Oops!</StyledTitleText>
+      <HeaderBar />
 
-      <StyledHeadingText kind="heading">Sorry, an unexpected error has occurred.</StyledHeadingText>
+      <Typography kind="title">Oops!</Typography>
+
+      <Spacer size="lg" />
 
       <Typography kind="paragraph">{error.statusText || error.message}</Typography>
     </Page>
   )
 }
-
-const StyledTitleText = styled(Typography)`
-  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
-`
-
-const StyledHeadingText = styled(Typography)`
-  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
-`
