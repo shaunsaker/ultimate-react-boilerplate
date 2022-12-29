@@ -28,5 +28,6 @@ module.exports = {
     'simple-import-sort/imports': ERROR,
     'simple-import-sort/exports': ERROR,
     'react/no-unescaped-entities': OFF,
+    'react/display-name': OFF,
   },
 }
