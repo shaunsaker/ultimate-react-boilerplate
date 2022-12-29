@@ -11,6 +11,7 @@ export const theme: DefaultTheme = {
     white100: '#FFFFFF',
     white60: 'rgba(255, 255, 255, 0.6)',
     white20: 'rgba(255, 255, 255, 0.2)',
+    red: '#ff6347',
   },
   spacing: {
     xs: 4,

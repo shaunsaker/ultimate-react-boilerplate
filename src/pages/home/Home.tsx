@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <Page>
       <HeaderBar>
-        <LinkText to={Routes.login}>Login</LinkText>
+        <LinkText to={Routes.register}>Register</LinkText>
       </HeaderBar>
 
       <Typography kind="title" role="heading">

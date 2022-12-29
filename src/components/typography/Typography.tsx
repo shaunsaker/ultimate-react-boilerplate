@@ -10,7 +10,6 @@ export const getTypographyCss: Record<TypographyKind, ReturnType<typeof css>> = 
   title: css`
     font-family: Knewave;
     font-size: 64px;
-    line-height: 64px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
 

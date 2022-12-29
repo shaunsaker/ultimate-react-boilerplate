@@ -10,6 +10,7 @@ declare module 'styled-components' {
       white100: string
       white60: string
       white20: string
+      red: string
     }
     spacing: {
       xs: number
