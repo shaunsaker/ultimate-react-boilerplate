@@ -9,6 +9,7 @@ export const IconButton = styled.button.attrs(() => ({ type: 'button' }))`
   transition: ${({ theme }) => theme.transition.default};
 
   &:hover,
+  &:focus-visible,
   &:active {
     color: ${({ theme }) => theme.colors.accent};
   }
