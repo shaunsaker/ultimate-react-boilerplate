@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 import { Error } from './pages/error/Error'
 import { ForgotPassword } from './pages/forgotPassword/ForgotPassword'
@@ -17,7 +17,7 @@ export enum Routes {
 // TODO: SS is there a way that we can render a catch all error route instead of declaring it with each route
 const errorElement = <Error />
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: Routes.home,
     element: <Home />,
