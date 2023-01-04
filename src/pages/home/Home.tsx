@@ -13,7 +13,7 @@ export const Home = () => {
         <LinkText to={Routes.register}>Register</LinkText>
       </HeaderBar>
 
-      <Typography kind="title" role="heading">
+      <Typography kind="title" as="h1">
         Ello Gov'na!
       </Typography>
     </Page>

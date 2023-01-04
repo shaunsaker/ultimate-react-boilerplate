@@ -44,7 +44,7 @@ export const Login = () => {
         <LinkText to={Routes.register}>Register</LinkText>
       </HeaderBar>
 
-      <Typography kind="title" role="heading">
+      <Typography kind="title" as="h1">
         Login
       </Typography>
 

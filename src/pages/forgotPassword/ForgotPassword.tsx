@@ -31,7 +31,7 @@ export const ForgotPassword = () => {
     <Page>
       <HeaderBar />
 
-      <Typography kind="title" role="heading">
+      <Typography kind="title" as="h1">
         Forgot Your Password?
       </Typography>
 

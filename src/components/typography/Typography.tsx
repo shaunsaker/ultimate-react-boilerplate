@@ -49,6 +49,7 @@ export const getTypographyCss: Record<TypographyKind, ReturnType<typeof css>> = 
 export const Typography = styled.div<{
   kind: TypographyKind
 }>`
+  all: unset;
   ${({ kind }) => getTypographyCss[kind]};
 
   a {

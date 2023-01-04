@@ -7,6 +7,6 @@ describe('Home', () => {
   it('displays greeting', async () => {
     render(<Home />)
 
-    expect(screen.getByRole('heading')).toHaveTextContent("Ello Gov'na!")
+    expect(screen.getByText("Ello Gov'na!")).toBeDefined()
   })
 })

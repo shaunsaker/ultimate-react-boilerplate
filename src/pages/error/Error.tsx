@@ -13,11 +13,15 @@ export const Error = () => {
     <Page>
       <HeaderBar />
 
-      <Typography kind="title">Oops!</Typography>
+      <Typography kind="title" as="h1">
+        Oops!
+      </Typography>
 
       <Spacer size="lg" />
 
-      <Typography kind="paragraph">{error.statusText || error.message}</Typography>
+      <Typography kind="paragraph" as="p">
+        {error.statusText || error.message}
+      </Typography>
     </Page>
   )
 }
