@@ -10,6 +10,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -17,7 +18,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'simple-import-sort'],
+  plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'react-hooks'],
   settings: {
     react: {
       version: 'detect',
@@ -29,5 +30,7 @@ module.exports = {
     'simple-import-sort/exports': ERROR,
     'react/no-unescaped-entities': OFF,
     'react/display-name': OFF,
+    'react-hooks/rules-of-hooks': ERROR,
+    'react-hooks/exhaustive-deps': ERROR,
   },
 }

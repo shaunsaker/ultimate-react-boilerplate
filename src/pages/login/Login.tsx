@@ -17,13 +17,19 @@ export const Login = () => {
   const [email, setEmail] = useAtom(userEmailAtom)
   const [password, setPassword] = useAtom(userPasswordAtom)
 
-  const onChangeEmail = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value)
-  }, [])
+  const onChangeEmail = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setEmail(event.target.value)
+    },
+    [setEmail],
+  )
 
-  const onChangePassword = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    setPassword(event.target.value)
-  }, [])
+  const onChangePassword = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setPassword(event.target.value)
+    },
+    [setPassword],
+  )
 
   const onSubmit = useCallback((event: FormEvent<HTMLFormElement>) => {
     // prevent page reload

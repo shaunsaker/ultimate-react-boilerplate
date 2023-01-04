@@ -13,9 +13,12 @@ import { userEmailAtom } from '../../store/user'
 export const ForgotPassword = () => {
   const [email, setEmail] = useAtom(userEmailAtom)
 
-  const onChangeEmail = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value)
-  }, [])
+  const onChangeEmail = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      setEmail(event.target.value)
+    },
+    [setEmail],
+  )
 
   const onSubmit = useCallback((event: FormEvent<HTMLFormElement>) => {
     // prevent page reload
