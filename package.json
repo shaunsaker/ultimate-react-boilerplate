@@ -48,7 +48,7 @@
     "vitest": "0.26.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,json,md}": [
+    "*.{js,jsx,ts,tsx,css,json}": [
       "prettier --write",
       "eslint --fix",
       "git add"
