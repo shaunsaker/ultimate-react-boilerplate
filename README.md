@@ -4,6 +4,8 @@
 
 I’m a React Typescript boilerplate with a WIP backend baked in (thanks to Supabase) 😛 Set up your next project/prototype with minimal input, so you can do what you do best, build and test amazing new products 🔥
 
+You can see me in action [here](https://ultimate-react-boilerplate.netlify.app/).
+
 ## What's in the box?
 
 - [Typescript](https://www.typescriptlang.org/)
