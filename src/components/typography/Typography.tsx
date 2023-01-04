@@ -31,11 +31,16 @@ export const getTypographyCss: Record<TypographyKind, ReturnType<typeof css>> = 
     line-height: 24px;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.white100};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
   `,
   small: css`
     font-family: Inter;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 15px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
   `,

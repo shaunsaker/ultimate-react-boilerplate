@@ -30,4 +30,9 @@ const ContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: ${({ theme }) => theme.spacing.lg}px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: ${({ theme }) => theme.spacing.md}px;
+  }
 `

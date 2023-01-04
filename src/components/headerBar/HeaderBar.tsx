@@ -35,7 +35,7 @@ export const HeaderBar = ({ children }: HeaderBarProps) => {
 
         <Spacer />
 
-        <Typography kind="paragraph">{appJson.displayName}</Typography>
+        <AppNameText kind="paragraph">{appJson.displayName}</AppNameText>
 
         <Spacer />
       </StyledLink>
@@ -51,9 +51,13 @@ const Container = styled.div`
   right: 0;
   left: 0;
   height: 64px;
-  padding: 0 ${({ theme }) => theme.spacing.lg}px;
   display: flex;
   align-items: center;
+  padding: 0 ${({ theme }) => theme.spacing.lg}px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: 0 ${({ theme }) => theme.spacing.md}px;
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -64,4 +68,9 @@ const StyledLink = styled(Link)`
 
 const StyledLogoIcon = styled(LogoIcon)`
   font-size: 24px;
+  min-width: 24px;
+`
+
+const AppNameText = styled(Typography)`
+  text-align: left;
 `
