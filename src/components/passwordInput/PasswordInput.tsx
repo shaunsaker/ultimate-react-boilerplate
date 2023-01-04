@@ -19,7 +19,7 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
     return (
       <Input {...props} ref={ref} type={showPassword ? 'text' : 'password'}>
         <InputIconContainer>
-          <IconButton onClick={onToggleShowPasswordClick}>
+          <IconButton name="show-password" onClick={onToggleShowPasswordClick}>
             {showPassword ? <EyeSlashIcon /> : <EyeIcon />}
           </IconButton>
         </InputIconContainer>

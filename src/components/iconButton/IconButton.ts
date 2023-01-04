@@ -1,6 +1,9 @@
+import { HTMLProps } from 'react'
 import styled from 'styled-components'
 
-export const IconButton = styled.button.attrs(() => ({ type: 'button' }))`
+type IconButtonProps = HTMLProps<HTMLButtonElement> & { name: string }
+
+export const IconButton = styled.button.attrs(() => ({ type: 'button' }))<IconButtonProps>`
   all: unset;
   cursor: pointer;
   display: flex;

@@ -22,7 +22,7 @@ export const HeaderBar = ({ children }: HeaderBarProps) => {
     <Container>
       {showBackButton && (
         <>
-          <IconButton onClick={goBack}>
+          <IconButton name="back" onClick={goBack}>
             <AngleLeftIcon />
           </IconButton>
 
