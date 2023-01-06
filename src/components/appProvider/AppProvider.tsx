@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { ReactNode } from 'react'
 import { ThemeProvider } from 'styled-components'
 
@@ -8,7 +8,7 @@ import { GlobalStyles } from '../globalStyles/GlobalStyles'
 
 type Props = { children: ReactNode }
 
-export const AppProvider = ({ children }: Props) => {
+export const AppProvider = ({ children }: Props): ReactElement => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

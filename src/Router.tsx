@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 import { Error } from './pages/error/Error'
@@ -40,6 +40,6 @@ const router = createHashRouter([
   },
 ])
 
-export const Router = () => {
+export const Router = (): ReactElement => {
   return <RouterProvider router={router} />
 }

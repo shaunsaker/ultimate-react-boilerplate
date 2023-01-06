@@ -4,8 +4,10 @@ import { ReactElement } from 'react'
 
 import { AppProvider } from '../components/appProvider/AppProvider'
 
-const customRender = (element: ReactElement, options?: Omit<RenderOptions, 'wrapper'>) =>
-  render(element, { wrapper: AppProvider, ...options })
+const customRender = (
+  element: ReactElement,
+  options?: Omit<RenderOptions, 'wrapper'>,
+): ReturnType<typeof render> => render(element, { wrapper: AppProvider, ...options })
 
 export * from '@testing-library/react'
 export { customRender as render }

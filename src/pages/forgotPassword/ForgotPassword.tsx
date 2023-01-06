@@ -1,5 +1,5 @@
 import { useAtom } from 'jotai'
-import React, { ChangeEvent, FormEvent, useCallback } from 'react'
+import React, { ChangeEvent, FormEvent, ReactElement, useCallback } from 'react'
 
 import { Button } from '../../components/button/Button'
 import { Form } from '../../components/form/Form'
@@ -10,7 +10,7 @@ import { Spacer } from '../../components/spacer/Spacer'
 import { Typography } from '../../components/typography/Typography'
 import { userEmailAtom } from '../../store/user'
 
-export const ForgotPassword = () => {
+export const ForgotPassword = (): ReactElement => {
   const [email, setEmail] = useAtom(userEmailAtom)
 
   const onChangeEmail = useCallback(

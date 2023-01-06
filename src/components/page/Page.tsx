@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import React, { ReactElement, ReactNode } from 'react'
 import styled from 'styled-components'
 
 type PageProps = { children: ReactNode }
 
-export const Page = ({ children }: PageProps) => {
+export const Page = ({ children }: PageProps): ReactElement => {
   return (
     <Container>
       <ContentContainer>{children}</ContentContainer>

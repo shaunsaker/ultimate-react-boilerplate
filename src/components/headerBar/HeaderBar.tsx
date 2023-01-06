@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactElement, ReactNode } from 'react'
 import styled from 'styled-components'
 
 import appJson from '../../../app.json'
@@ -14,7 +14,7 @@ import { useShowBackButton } from './useShowBackButton'
 
 type HeaderBarProps = { children?: ReactNode }
 
-export const HeaderBar = ({ children }: HeaderBarProps) => {
+export const HeaderBar = ({ children }: HeaderBarProps): ReactElement => {
   const showBackButton = useShowBackButton()
   const goBack = useGoBack()
 
