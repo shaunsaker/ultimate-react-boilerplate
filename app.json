@@ -1,3 +1,6 @@
 {
-  "displayName": "Ultimate React Boilerplate"
+  "displayName": "Ultimate React Boilerplate",
+  "description": "I’m a React Typescript boilerplate with a WIP backend baked in (thanks to Supabase) 😛 Set up your next project/prototype with minimal input, so you can do what you do best, build and test amazing new products 🔥",
+  "themeColor": "#FEE048",
+  "backgroundColor": "#010009"
 }

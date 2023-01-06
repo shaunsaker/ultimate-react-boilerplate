@@ -1,6 +1,10 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import handlebars from 'vite-plugin-handlebars'
 import svgr from 'vite-plugin-svgr'
+
+// @ts-expect-error TODO: SS appJson exists, I'm not sure how to get vite to recognise that 🤷‍♂️
+import appJson from './app.json'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,9 +21,15 @@ export default defineConfig({
         replaceAttrValues: { '#000000': 'currentColor' },
       },
     }),
+    // @ts-expect-error vite-plugin-handlebars types incorrect
+    handlebars({
+      context: {
+        title: appJson.displayName,
+        description: appJson.description,
+      },
+    }),
   ],
 
-  // @ts-expect-error vite types are incorrect
   test: {
     globals: true,
     environment: 'jsdom',

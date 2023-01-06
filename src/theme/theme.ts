@@ -1,10 +1,12 @@
 import { DefaultTheme } from 'styled-components'
 
+import appJson from '../../app.json'
+
 const BLACK_50 = 'rgba(1, 0, 9, 0.5)'
 
 export const theme: DefaultTheme = {
   colors: {
-    accent: '#FEE048',
+    accent: appJson.themeColor,
     black100: '#010009',
     black80: 'rgba(1, 0, 9, 0.8)',
     black50: BLACK_50,

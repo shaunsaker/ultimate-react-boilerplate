@@ -38,3 +38,21 @@ yarn dev
 ## Deployment
 
 I'd recommend using [Netlify](netlify.com) for deployment and connecting the site to your Github repo so that new deploys are triggered on every push to `master`.
+
+## Generating Public Assets
+
+After spending many hours building an app, I've found that having to manually generate public assets is one of the most annoying things ever! So I created a script to do this for you 😛 All you need to do is:
+
+1. Install pre-requisites:
+   - [imagemagick cli](https://imagemagick.org/index.php)
+   - [inkscape cli](https://inkscape.org/)
+   - [optipng cli](https://optipng.sourceforge.net/)
+1. Update `./public/icon.svg` with your logo. It should be a **square svg**.
+1. Customise `./app.json`.
+1. Run the script:
+
+```
+yarn ts-node ./scripts/generateAssets
+```
+
+And boom 💣🎆, you have all the public assets you'll need, optimised and including a PWA setup 😎✅
