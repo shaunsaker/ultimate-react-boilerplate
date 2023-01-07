@@ -1,16 +1,14 @@
 import * as path from 'path'
 
+import { copyFile } from '../utils/copyFile'
 import { createFavicon } from '../utils/createFavicon'
 import { createPng } from '../utils/createPng'
 import { ensureFileDirExists } from '../utils/ensureFileDirExists'
-import { optimisePng } from '../utils/optimisePng'
-import { optimiseSvg } from '../utils/optimiseSvg'
 
 const CURRENT_WORKING_DIRECTORY = process.env.PWD || __dirname
-const LOGO_PATH = path.join(CURRENT_WORKING_DIRECTORY, './src/assets/logo.svg')
 const PUBLIC_PATH = path.join(CURRENT_WORKING_DIRECTORY, './public')
+const LOGO_PATH = path.join(PUBLIC_PATH, './icon.svg')
 
-// TODO: SS use sharp for image processing
 async function main(): Promise<void> {
   ensureFileDirExists(PUBLIC_PATH)
 
@@ -25,15 +23,11 @@ async function main(): Promise<void> {
     size: 512,
   })
 
-  await optimisePng({ path: `${PUBLIC_PATH}/icon-512.png` })
-
   await createPng({
     inputPath: LOGO_PATH,
     outputPath: `${PUBLIC_PATH}/icon-192.png`,
     size: 192,
   })
-
-  await optimisePng({ path: `${PUBLIC_PATH}/icon-192.png` })
 
   await createPng({
     inputPath: LOGO_PATH,
@@ -41,9 +35,11 @@ async function main(): Promise<void> {
     size: 180,
   })
 
-  await optimisePng({ path: `${PUBLIC_PATH}/apple-touch-icon.png` })
-
-  await optimiseSvg({ path: LOGO_PATH })
+  // copy svg to ./src/assets for use in HeaderBar
+  await copyFile({
+    inputPath: LOGO_PATH,
+    outputPath: path.join(CURRENT_WORKING_DIRECTORY, './src/assets/logo-icon.svg'),
+  })
 }
 
 main()
