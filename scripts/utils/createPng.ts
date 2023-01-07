@@ -12,7 +12,9 @@ export const createPng = async ({
 }): Promise<void> => {
   log(`Creating png from ${inputPath} at ${outputPath} with size ${size}px...`)
 
-  await execCommand(`inkscape ${inputPath} --export-width=${size} --export-filename=${outputPath}`)
+  await execCommand(
+    `inkscape ${inputPath} --export-width=${size} --export-height=${size} --export-filename=${outputPath}`,
+  )
 
   log(`Created!`, 'success')
 }

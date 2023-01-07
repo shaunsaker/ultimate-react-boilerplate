@@ -15,7 +15,9 @@ export const createFavicon = async ({
 }): Promise<void> => {
   // convert the image to png
   log(`Converting ${inputPath} to png...`)
-  await execCommand(`inkscape ${inputPath} --export-width=32 --export-filename=${TEMP_PATH}`)
+  await execCommand(
+    `inkscape ${inputPath} --export-width=32 --export-height=32 --export-filename=${TEMP_PATH}`,
+  )
   log(`Converted!`, 'success')
 
   // convert the png to ico
