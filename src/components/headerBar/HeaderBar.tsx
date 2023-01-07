@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import appJson from '../../../app.json'
 import AngleLeftIcon from '../../assets/angle-left-icon.svg'
-import LogoIcon from '../../assets/logo.svg'
+import LogoIcon from '../../assets/logo-icon.svg'
 import { Routes } from '../../Router'
 import { IconButton } from '../iconButton/IconButton'
 import { Link } from '../link/Link'
