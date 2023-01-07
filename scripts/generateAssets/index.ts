@@ -5,13 +5,11 @@ import { createPng } from '../utils/createPng'
 import { ensureFileDirExists } from '../utils/ensureFileDirExists'
 import { optimisePng } from '../utils/optimisePng'
 import { optimiseSvg } from '../utils/optimiseSvg'
-import { updateManifestJson } from './updateManifestJson'
 
 const CURRENT_WORKING_DIRECTORY = process.env.PWD || __dirname
 const LOGO_PATH = path.join(CURRENT_WORKING_DIRECTORY, './src/assets/logo.svg')
 const PUBLIC_PATH = path.join(CURRENT_WORKING_DIRECTORY, './public')
 
-// TODO: SS service worker
 // TODO: SS use sharp for image processing
 async function main(): Promise<void> {
   ensureFileDirExists(PUBLIC_PATH)
@@ -46,8 +44,6 @@ async function main(): Promise<void> {
   await optimisePng({ path: `${PUBLIC_PATH}/apple-touch-icon.png` })
 
   await optimiseSvg({ path: LOGO_PATH })
-
-  await updateManifestJson({ path: `${PUBLIC_PATH}/manifest.json` })
 }
 
 main()

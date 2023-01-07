@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars'
+import { VitePWA } from 'vite-plugin-pwa'
 import svgr from 'vite-plugin-svgr'
 
 // @ts-expect-error TODO: SS appJson exists, I'm not sure how to get vite to recognise that 🤷‍♂️
@@ -21,11 +22,37 @@ export default defineConfig({
         replaceAttrValues: { '#000000': 'currentColor' },
       },
     }),
+    VitePWA({
+      registerType: 'prompt',
+      includeAssets: ['/favicon.ico', '/apple-touch-icon.png', '/icon.svg'],
+      manifest: {
+        name: appJson.displayName,
+        short_name: appJson.displayName,
+        description: appJson.description,
+        theme_color: appJson.themeColor,
+        start_url: '/',
+        icons: [
+          {
+            src: 'icon-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
+
     // @ts-expect-error vite-plugin-handlebars types incorrect
     handlebars({
       context: {
         title: appJson.displayName,
         description: appJson.description,
+        themeColor: appJson.themeColor,
+        backgroundColor: appJson.backgroundColor,
       },
     }),
   ],
