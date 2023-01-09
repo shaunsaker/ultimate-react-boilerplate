@@ -1,5 +1,7 @@
 # Ultimate React Boilerplate
 
+[![Main](https://github.com/shaunsaker/ultimate-react-boilerplate/actions/workflows/main.yml/badge.svg)](https://github.com/shaunsaker/ultimate-react-boilerplate/actions/workflows/main.yml)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c0394429-94d6-485f-bc84-eaa36f5bc040/deploy-status)](https://app.netlify.com/sites/ultimate-react-boilerplate/deploys)
 
 ## What is it?
