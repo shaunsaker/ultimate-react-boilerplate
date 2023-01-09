@@ -18,6 +18,7 @@ You can see me in action [here](https://ultimate-react-boilerplate.netlify.app/)
 - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) for integration testing 🐙
 - staged linting, thanks to [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) 🚫💩
 - [@fontsource](https://fontsource.org/) for custom fonts ✍️
+- [vite-plugin-svgr](https://github.com/pd4d10/vite-plugin-svgr) for svg support.
 
 ## Setup
 
