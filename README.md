@@ -17,6 +17,7 @@ You can see me in action [here](https://ultimate-react-boilerplate.netlify.app/)
 - [vite](https://vitejs.dev/) for development ⚡️
 - [prettier](https://prettier.io/) for consistent formatting 🎨
 - [eslint](https://eslint.org/) for linting 🕵️‍♂️
+- [vitest](https://github.com/vitest-dev/vitest) for testing ⚡️
 - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) for integration testing 🐙
 - staged linting, thanks to [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) 🚫💩
 - [@fontsource](https://fontsource.org/) for custom fonts ✍️
