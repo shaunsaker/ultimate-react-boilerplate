@@ -1,5 +1,7 @@
 # Ultimate React Boilerplate
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c0394429-94d6-485f-bc84-eaa36f5bc040/deploy-status)](https://app.netlify.com/sites/ultimate-react-boilerplate/deploys)
+
 ## What is it?
 
 I’m a React Typescript boilerplate with a WIP backend baked in (thanks to Supabase) 😛 Set up your next project/prototype with minimal input, so you can do what you do best, build and test amazing new products 🔥
