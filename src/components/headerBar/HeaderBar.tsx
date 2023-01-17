@@ -51,6 +51,7 @@ const Container = styled.div`
   right: 0;
   left: 0;
   height: 64px;
+  background-color: ${({ theme }) => theme.colors.black100};
   display: flex;
   align-items: center;
   padding: 0 ${({ theme }) => theme.spacing.lg}px;
