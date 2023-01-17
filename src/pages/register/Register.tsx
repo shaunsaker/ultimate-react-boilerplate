@@ -77,7 +77,9 @@ export const Register = (): ReactElement => {
 
           <Spacer size="lg" />
 
-          <Button type="submit">Register</Button>
+          <Button kind="primary" type="submit">
+            Register
+          </Button>
         </Form>
       </Page.Content>
     </Page>

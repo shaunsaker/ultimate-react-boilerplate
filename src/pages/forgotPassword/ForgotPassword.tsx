@@ -51,7 +51,9 @@ export const ForgotPassword = (): ReactElement => {
 
           <Spacer size="lg" />
 
-          <Button type="submit">Submit</Button>
+          <Button kind="primary" type="submit">
+            Submit
+          </Button>
         </Form>
       </Page.Content>
     </Page>

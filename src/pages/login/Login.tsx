@@ -81,7 +81,9 @@ export const Login = (): ReactElement => {
 
           <Spacer size="lg" />
 
-          <Button type="submit">Login</Button>
+          <Button kind="primary" type="submit">
+            Login
+          </Button>
         </Form>
       </Page.Content>
     </Page>
