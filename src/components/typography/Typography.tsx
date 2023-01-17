@@ -4,7 +4,7 @@ import '@fontsource/inter/latin-400.css'
 
 import styled, { css } from 'styled-components'
 
-export type TypographyKind = 'title' | 'heading' | 'paragraph' | 'small'
+export type TypographyKind = 'title' | 'heading' | 'paragraph' | 'small' | 'tiny'
 
 export const getTypographyCss: Record<TypographyKind, ReturnType<typeof css>> = {
   title: css`
@@ -15,13 +15,12 @@ export const getTypographyCss: Record<TypographyKind, ReturnType<typeof css>> = 
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
       font-size: 48px;
-      line-height: 48px;
     }
   `,
   heading: css`
     font-family: Inter;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 48px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
   `,
@@ -40,7 +39,14 @@ export const getTypographyCss: Record<TypographyKind, ReturnType<typeof css>> = 
   small: css`
     font-family: Inter;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 16px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.colors.white100};
+  `,
+  tiny: css`
+    font-family: Inter;
+    font-size: 10px;
+    line-height: 10px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
   `,
