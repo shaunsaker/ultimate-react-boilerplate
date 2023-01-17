@@ -4,13 +4,13 @@ import { HeaderBar } from '../../components/headerBar/HeaderBar'
 import { Link } from '../../components/link/Link'
 import { Page } from '../../components/page/Page'
 import { Typography } from '../../components/typography/Typography'
-import { Routes } from '../../Router'
+import { RoutePaths } from '../../Router'
 
 export const Home = (): ReactElement => {
   return (
     <Page>
       <HeaderBar>
-        <Link to={Routes.register}>Register</Link>
+        <Link to={RoutePaths.register}>Register</Link>
       </HeaderBar>
 
       <Page.Content>

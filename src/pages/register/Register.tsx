@@ -10,7 +10,7 @@ import { Page } from '../../components/page/Page'
 import { PasswordInput } from '../../components/passwordInput/PasswordInput'
 import { Spacer } from '../../components/spacer/Spacer'
 import { Typography } from '../../components/typography/Typography'
-import { Routes } from '../../Router'
+import { RoutePaths } from '../../Router'
 import { userEmailAtom, userPasswordAtom } from '../../store/user'
 
 export const Register = (): ReactElement => {
@@ -41,7 +41,7 @@ export const Register = (): ReactElement => {
   return (
     <Page>
       <HeaderBar>
-        <Link to={Routes.login}>Login</Link>
+        <Link to={RoutePaths.login}>Login</Link>
       </HeaderBar>
 
       <Page.Content>

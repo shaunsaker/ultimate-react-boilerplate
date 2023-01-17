@@ -10,7 +10,7 @@ import { Page } from '../../components/page/Page'
 import { PasswordInput } from '../../components/passwordInput/PasswordInput'
 import { Spacer } from '../../components/spacer/Spacer'
 import { Typography } from '../../components/typography/Typography'
-import { Routes } from '../../Router'
+import { RoutePaths } from '../../Router'
 import { userEmailAtom, userPasswordAtom } from '../../store/user'
 
 export const Login = (): ReactElement => {
@@ -41,7 +41,7 @@ export const Login = (): ReactElement => {
   return (
     <Page>
       <HeaderBar>
-        <Link to={Routes.register}>Register</Link>
+        <Link to={RoutePaths.register}>Register</Link>
       </HeaderBar>
 
       <Page.Content>
@@ -77,7 +77,7 @@ export const Login = (): ReactElement => {
 
           <Spacer size="sm" />
 
-          <Link to={Routes.forgotPassword}>Forgot password?</Link>
+          <Link to={RoutePaths.forgotPassword}>Forgot password?</Link>
 
           <Spacer size="lg" />
 

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import appJson from '../../../app.json'
 import AngleLeftIcon from '../../assets/angle-left-icon.svg'
 import LogoIcon from '../../assets/logo-icon.svg'
-import { Routes } from '../../Router'
+import { RoutePaths } from '../../Router'
 import { IconButton } from '../iconButton/IconButton'
 import { Link } from '../link/Link'
 import { Spacer } from '../spacer/Spacer'
@@ -30,7 +30,7 @@ export const HeaderBar = ({ children }: HeaderBarProps): ReactElement => {
         </>
       )}
 
-      <StyledLink to={Routes.home}>
+      <StyledLink to={RoutePaths.home}>
         <StyledLogoIcon />
 
         <Spacer />
