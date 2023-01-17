@@ -1,9 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-import { Link } from '../link/Link'
 import { getTypographyCss } from '../typography/Typography'
 
-export const LinkText = styled(Link)`
+export const ANCHOR_TEXT_CSS = css`
   ${getTypographyCss['paragraph']};
   font-weight: 700;
   text-decoration-line: underline;
@@ -13,4 +12,11 @@ export const LinkText = styled(Link)`
   &:active {
     color: ${({ theme }) => theme.colors.accent};
   }
+`
+
+export const AnchorText = styled.a.attrs(() => ({
+  target: '_blank',
+  rel: 'noopener noreferer',
+}))`
+  ${ANCHOR_TEXT_CSS}
 `

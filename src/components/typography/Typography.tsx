@@ -57,8 +57,4 @@ export const Typography = styled.div<{
 }>`
   all: unset;
   ${({ kind }) => getTypographyCss[kind]};
-
-  a {
-    color: ${({ theme }) => theme.colors.accent};
-  }
 `

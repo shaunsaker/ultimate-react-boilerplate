@@ -5,7 +5,7 @@ import { Button } from '../../components/button/Button'
 import { Form } from '../../components/form/Form'
 import { HeaderBar } from '../../components/headerBar/HeaderBar'
 import { Input } from '../../components/input/Input'
-import { LinkText } from '../../components/linkText/LinkText'
+import { Link } from '../../components/link/Link'
 import { Page } from '../../components/page/Page'
 import { PasswordInput } from '../../components/passwordInput/PasswordInput'
 import { Spacer } from '../../components/spacer/Spacer'
@@ -41,7 +41,7 @@ export const Login = (): ReactElement => {
   return (
     <Page>
       <HeaderBar>
-        <LinkText to={Routes.register}>Register</LinkText>
+        <Link to={Routes.register}>Register</Link>
       </HeaderBar>
 
       <Page.Content>
@@ -77,7 +77,7 @@ export const Login = (): ReactElement => {
 
           <Spacer size="sm" />
 
-          <LinkText to={Routes.forgotPassword}>Forgot password?</LinkText>
+          <Link to={Routes.forgotPassword}>Forgot password?</Link>
 
           <Spacer size="lg" />
 

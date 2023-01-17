@@ -62,6 +62,7 @@ const StyledLink = styled(Link)`
   flex: 1;
   display: flex;
   align-items: center;
+  text-decoration: none;
 `
 
 const StyledLogoIcon = styled(LogoIcon)`
