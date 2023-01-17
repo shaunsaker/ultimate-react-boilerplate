@@ -44,40 +44,42 @@ export const Register = (): ReactElement => {
         <LinkText to={Routes.login}>Login</LinkText>
       </HeaderBar>
 
-      <Typography kind="title" as="h1">
-        Register
-      </Typography>
-
-      <Spacer size="lg" />
-
-      <Form onSubmit={onSubmit}>
-        <Input
-          type="email"
-          name="email"
-          label="Email"
-          placeholder="Enter your email..."
-          required
-          value={email}
-          onChange={onChangeEmail}
-        />
-
-        <Spacer />
-
-        <PasswordInput
-          name="password"
-          label="Password"
-          placeholder="Enter your password..."
-          required
-          // TODO: SS this is a supabase requirement, when supabase is added, use a constant instead
-          minLength={6}
-          value={password}
-          onChange={onChangePassword}
-        />
+      <Page.Content>
+        <Typography kind="title" as="h1">
+          Register
+        </Typography>
 
         <Spacer size="lg" />
 
-        <Button type="submit">Register</Button>
-      </Form>
+        <Form onSubmit={onSubmit}>
+          <Input
+            type="email"
+            name="email"
+            label="Email"
+            placeholder="Enter your email..."
+            required
+            value={email}
+            onChange={onChangeEmail}
+          />
+
+          <Spacer />
+
+          <PasswordInput
+            name="password"
+            label="Password"
+            placeholder="Enter your password..."
+            required
+            // TODO: SS this is a supabase requirement, when supabase is added, use a constant instead
+            minLength={6}
+            value={password}
+            onChange={onChangePassword}
+          />
+
+          <Spacer size="lg" />
+
+          <Button type="submit">Register</Button>
+        </Form>
+      </Page.Content>
     </Page>
   )
 }

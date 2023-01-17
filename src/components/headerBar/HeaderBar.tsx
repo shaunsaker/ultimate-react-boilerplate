@@ -46,10 +46,7 @@ export const HeaderBar = ({ children }: HeaderBarProps): ReactElement => {
 }
 
 const Container = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
   height: 64px;
   background-color: ${({ theme }) => theme.colors.black100};
   display: flex;

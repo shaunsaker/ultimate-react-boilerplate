@@ -13,9 +13,11 @@ export const Home = (): ReactElement => {
         <LinkText to={Routes.register}>Register</LinkText>
       </HeaderBar>
 
-      <Typography kind="title" as="h1">
-        Ello Gov'na!
-      </Typography>
+      <Page.Content>
+        <Typography kind="title" as="h1">
+          Ello Gov'na!
+        </Typography>
+      </Page.Content>
     </Page>
   )
 }

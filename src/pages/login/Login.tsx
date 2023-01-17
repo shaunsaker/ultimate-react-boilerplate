@@ -44,44 +44,46 @@ export const Login = (): ReactElement => {
         <LinkText to={Routes.register}>Register</LinkText>
       </HeaderBar>
 
-      <Typography kind="title" as="h1">
-        Login
-      </Typography>
-
-      <Spacer size="lg" />
-
-      <Form onSubmit={onSubmit}>
-        <Input
-          type="email"
-          name="email"
-          label="Email"
-          placeholder="Enter your email..."
-          required
-          value={email}
-          onChange={onChangeEmail}
-        />
-
-        <Spacer />
-
-        <PasswordInput
-          name="password"
-          label="Password"
-          placeholder="Enter your password..."
-          required
-          // TODO: SS this is a supabase requirement, when supabase is added, use a constant instead
-          minLength={6}
-          value={password}
-          onChange={onChangePassword}
-        />
-
-        <Spacer size="sm" />
-
-        <LinkText to={Routes.forgotPassword}>Forgot password?</LinkText>
+      <Page.Content>
+        <Typography kind="title" as="h1">
+          Login
+        </Typography>
 
         <Spacer size="lg" />
 
-        <Button type="submit">Login</Button>
-      </Form>
+        <Form onSubmit={onSubmit}>
+          <Input
+            type="email"
+            name="email"
+            label="Email"
+            placeholder="Enter your email..."
+            required
+            value={email}
+            onChange={onChangeEmail}
+          />
+
+          <Spacer />
+
+          <PasswordInput
+            name="password"
+            label="Password"
+            placeholder="Enter your password..."
+            required
+            // TODO: SS this is a supabase requirement, when supabase is added, use a constant instead
+            minLength={6}
+            value={password}
+            onChange={onChangePassword}
+          />
+
+          <Spacer size="sm" />
+
+          <LinkText to={Routes.forgotPassword}>Forgot password?</LinkText>
+
+          <Spacer size="lg" />
+
+          <Button type="submit">Login</Button>
+        </Form>
+      </Page.Content>
     </Page>
   )
 }

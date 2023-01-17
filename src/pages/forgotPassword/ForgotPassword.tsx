@@ -31,27 +31,29 @@ export const ForgotPassword = (): ReactElement => {
     <Page>
       <HeaderBar />
 
-      <Typography kind="title" as="h1">
-        Forgot Your Password?
-      </Typography>
-
-      <Spacer size="lg" />
-
-      <Form onSubmit={onSubmit}>
-        <Input
-          type="email"
-          name="email"
-          label="Email"
-          placeholder="Enter your email..."
-          required
-          value={email}
-          onChange={onChangeEmail}
-        />
+      <Page.Content>
+        <Typography kind="title" as="h1">
+          Forgot Your Password?
+        </Typography>
 
         <Spacer size="lg" />
 
-        <Button type="submit">Submit</Button>
-      </Form>
+        <Form onSubmit={onSubmit}>
+          <Input
+            type="email"
+            name="email"
+            label="Email"
+            placeholder="Enter your email..."
+            required
+            value={email}
+            onChange={onChangeEmail}
+          />
+
+          <Spacer size="lg" />
+
+          <Button type="submit">Submit</Button>
+        </Form>
+      </Page.Content>
     </Page>
   )
 }

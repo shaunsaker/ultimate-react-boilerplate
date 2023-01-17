@@ -30,7 +30,12 @@ declare module 'styled-components' {
       default: string
     }
     breakpoints: {
+      tablet: number
       mobile: number
+      mobileSm: number
+    }
+    maxWidths: {
+      content: number
     }
   }
 }

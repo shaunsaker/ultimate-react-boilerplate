@@ -33,6 +33,11 @@ export const theme: DefaultTheme = {
     default: '0.167s all ease-out',
   },
   breakpoints: {
+    tablet: 767,
     mobile: 425,
+    mobileSm: 374,
+  },
+  maxWidths: {
+    content: 560,
   },
 }
