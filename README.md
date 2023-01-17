@@ -16,6 +16,7 @@ You can see me in action [here](https://ultimate-react-boilerplate.netlify.app/)
 - [React](https://reactjs.org/)
 - [jotai](https://jotai.org/) for state 👻
 - [styled-components](https://styled-components.com/) for styling 💅
+- [react-router-dom](https://reactrouter.com/en/main) with preconfigured Router 🕸
 - [vite](https://vitejs.dev/) for development ⚡️
 - [prettier](https://prettier.io/) for consistent formatting 🎨
 - [eslint](https://eslint.org/) for linting 🕵️‍♂️
@@ -24,15 +25,18 @@ You can see me in action [here](https://ultimate-react-boilerplate.netlify.app/)
 - staged linting, thanks to [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) 🚫💩
 - [@fontsource](https://fontsource.org/) for custom fonts ✍️
 - [vite-plugin-svgr](https://github.com/pd4d10/vite-plugin-svgr) for svg support.
+- a CI running `lint`, `test` and `build` on every commit thanks to [Github Actions](https://github.com/features/actions)
 
 ## Setup
 
 OBVIOUS NOTE: Replace "PROJECT_NAME" with your own project's name 😉
 
-```
+```shell
 git clone https://github.com/shaunsaker/ultimate-react-boilerplate.git PROJECT_NAME
 cd PROJECT_NAME
 yarn
+rm -rf .git && git init && git add . && git commit -m "init" # reset git and commit
+npm pkg set name="PROJECT_NAME" # change package.json name
 ```
 
 ## Running
@@ -58,3 +62,7 @@ yarn ts-node ./scripts/generateAssets
 ```
 
 And boom 💣🎆, you have all the public assets you'll need, optimised and including a PWA setup 😎✅
+
+Here it is in action:
+
+![Generating assets](https://github.com/shaunsaker/ultimate-react-boilerplate/blob/master/assets/generate-assets.gif?raw=true)
